@@ -1,0 +1,301 @@
+.#{$block-selector} {
+    ul,ol{
+        list-style: none;
+        padding:0;
+    }
+}
+
+/* List Style Widgets*/
+.widget_archive a,
+.widget_recent_entries a,
+.widget_recent_comments a,
+.widget_layered_nav a,
+.widget_product_categories a
+{ font-weight:400;}
+
+.widget_archive a:before,
+.widget_recent_entries a:before,
+.widget_recent_comments a:first-child:before,
+.widget_layered_nav a:before,
+.widget_categories a:before {
+    margin-right: 10px;
+    font-family: "FontAwesome";
+    color: $brand-primary;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 22px
+}
+.widget_archive a:before { content: "\f016" }
+.widget_recent_entries a:before { content: "\f0f6" }
+.widget_recent_comments a:first-child:before { content: "\f0e5" }
+.widget_layered_nav a:before { content: "\f0da" }
+.widget_categories a:before { content: "\f114" }
+
+.widget_archive,
+.widget_categories ,
+.widget_links ,
+.widget_meta ,
+.widget_pages ,
+.widget_recent_comments ,
+.widget_recent_entries  {
+    >li {
+        border-top: 1px solid $border-color;
+        padding: 10px 0;
+        color: #999;
+        &>span{
+            float: right;
+            color: #000;
+        }
+    }
+}
+
+.widget_archive li:first-child,
+.widget_categories li:first-child,
+.widget_links li:first-child,
+.widget_meta li:first-child,
+.widget_pages li:first-child,
+.widget_recent_comments li:first-child,
+.widget_recent_entries li:first-child {
+    border-top: 0;
+}
+
+.widget_categories li ul,
+.widget_pages li ul {
+    border-top: 1px solid $border-color;
+}
+.widget_categories li ul.children{
+    border-top: none;
+    padding-right: 0;
+}
+.widget_categories li li:last-child,
+.widget_pages li li:last-child {
+    padding-bottom: 0;
+}
+
+.widget_recent_comments{
+    .comment-author-link{
+        color: $brand-primary;
+    }
+}
+.widget.widget_categories ul,
+.widget.widget_layered_nav ul,
+.widget.widget_layered_nav_filters ul,
+.widget_nav_menu ul,
+.widget.widget_pages ul{
+    li {
+        @include rtl-padding(5px,0,5px,15px);
+        &:last-child {
+            border-bottom: none;
+        }
+        a{
+            &:hover{
+                color: $theme-color;
+            }
+        }
+        ul.children{
+            li{
+                &:last-child {
+                    border-top: none;
+                }
+            }
+        }
+    }
+}
+/* Recent Posts Widget */
+
+.widget_recent_entries .post-date {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 5px;
+    color: $theme-color;
+}
+
+.widget_wpopal_recent_post {
+    .post-widget{
+        border: none;
+    }
+    .item-post.media {
+        border-top: 1px solid $border-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        &:first-child {
+            border-top: none;
+        }
+        a.image {
+            width: 100px;
+            @include rtl-padding-left(20px);
+        }
+        .media-body {
+            .entry-title {
+                @include rtl-padding-right(15px);
+            }
+            > p {
+                display: none;
+            }
+        }
+    }
+    .post-stick-layout {
+        .item-post.media.item-big {
+            border-top: none;
+            a.image {
+                @include rtl-padding-right(0);
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .entry-title {
+                margin: 0 0 10px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .item-post.media {
+            padding-top: 15px;
+            .media-body {
+                .entry-title {
+                    margin: 0 0 5px;
+                }
+            }
+            .post-date {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+/* Search Widget */
+.widget_search{
+    .btn-search{
+        input{
+            border:none;
+            background: none;
+        }
+    }
+}
+/* RSS Widget */
+
+.rsswidget img {
+    margin-top: -4px;
+}
+
+.rssSummary {
+    margin: 9px 0;
+}
+
+.rss-date {
+    display: block;
+}
+
+.widget_rss li {
+    margin-bottom: 18px;
+}
+
+.widget_rss li:last-child {
+    margin-bottom: 0;
+}
+
+/* Text Widget */
+
+.widget_text > div > :last-child {
+    margin-bottom: 0;
+}
+
+/* Calendar Widget*/
+.widget_calendar {
+    table {
+        line-height: 2;
+        margin: 0;
+        width: 100%;
+    }
+    caption {
+        color: $black;
+        font-weight: 700;
+        line-height: 1.7142857142;
+        margin-bottom: 10px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    thead th {
+        background: #f5f5f5;
+    }
+    tbody td, thead th {
+        text-align: center;
+    }
+    tbody a {
+        background-color: $theme-color;
+        color: #fff;
+        display: block;
+        &:hover {
+          background-color: #41a62a;
+          color: #fff;
+        }
+    }
+    #prev {
+        padding-left: 5px;
+    }
+    #next {
+        padding-right: 5px;
+        text-align: right;
+    }
+    #today{
+        background-color: $theme-color;
+        color: #fff;
+        &:hover{
+            background-color: darken($theme-color, 5%);
+        }
+    }
+}
+/* Newletter in footer */
+.widget_mc4wp_form_widget{
+    .input-group{
+        display: block;
+        .input-group-btn{
+            position: relative;
+            &:before{
+                content: "\f061";
+                font-family: FontAwesome;
+                top: 14px;
+                right: 16px;
+                position: absolute;
+                color: #fff;
+                font-size: 14px;
+                z-index: 99;
+            }
+        }
+        .form-control{
+            height: 45px;
+            margin-bottom: 18px;
+        }
+        .btn{
+            border-radius: 2px;
+            position: absolute;
+            @include rtl-right(0);
+            background: $theme-color;
+            border: none;
+            text-indent: 999em;
+            width: 45px;
+            height: 45px;
+            border-radius: 0;
+        }
+    }
+}
+/****/
+.widget.widget_categories, .widget.widget_product_categories {
+    background: #f4f5fc;
+    .widget-title,.widgettitle {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 0;
+    }
+    ul {
+        padding: 0 30px;
+        li {
+            padding: 8px 0;
+        }
+    }
+}   

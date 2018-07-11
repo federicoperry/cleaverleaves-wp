@@ -1,0 +1,14 @@
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "vars/vars";
+@import "bootstrap/mixins";
+
+@import "components/mixins";
+@import "components/variables";
+
+@import "woocommerce/variables";
+@import "woocommerce/widget";
+@import "woocommerce/styles";
+@import "woocommerce/form";
+
+

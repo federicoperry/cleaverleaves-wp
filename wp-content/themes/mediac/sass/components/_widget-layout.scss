@@ -1,0 +1,84 @@
+/* block */
+
+.#{$block-selector} {
+        position: relative;
+    .#{$block-heading-selector}{
+        font-size: $block-module-heading-font-size;
+        color: $block-module-heading-color;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: $grid-gutter-width;
+        letter-spacing: 0px;
+        > span{
+            position: relative;
+            display: block;
+        }
+    }
+    .#{$block-content-selector} {
+    }
+    /* block styles */
+    &.nopadding{
+        .#{$block-content-selector}{
+            padding:0;
+            margin: 0;
+        }
+    }
+}
+
+/**
+ * Styling Css for widgets in Sidebar Left Static
+ */
+.#{$block-prefix}-static{
+    .#{$block-heading-selector}{
+        color:#FFFFFF;
+    }
+    ul li { border:none }
+}
+ 
+.sidebar{
+    font-size: 14px;
+    .widget{
+        margin-bottom: $block-sidebar-box-margin;
+        .widget-title, .widgettitle {
+            position: relative;
+            font-size: $block-sidebar-heading-font-size;
+            margin-bottom: $block-sidebar-heading-margin;
+            padding: $block-sidebar-heading-padding;
+            color: $block-sidebar-heading-color;
+            background: $block-sidebar-heading-bg;
+            &:after,
+            &:before{
+                content: "\f053";
+                font-family: FontAwesome;
+                position: absolute;
+                top: 0;
+                font-size: 18px;
+                height: 15px;
+                width: 12px;
+                overflow: hidden;
+                border-radius: 5px;
+                color: $theme-color;
+                left: 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+ 
+
+/**
+ * Styling Css for widgets in footer layout
+ */
+.opal-footer{
+    .#{$block-selector} {
+        .#{$block-heading-selector}{
+            font-size: $footer-heading-font-size ;
+            text-transform: $footer-heading-transform;
+            margin: $footer-heading-margin;
+            display: $footer-heading-display;
+            padding: $footer-heading-padding;
+            font-weight: $footer-heading-fweight ;
+            font-family: $footer-heading-ffamily;
+        }
+    }
+}

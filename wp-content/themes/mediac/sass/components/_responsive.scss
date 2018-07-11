@@ -1,0 +1,406 @@
+@media (min-width: $screen-lg) {
+  .col-lg-cus-5 {
+    width: 20%;
+    @include rtl-float-left();
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+  }
+}
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .col-md-cus-5 {
+    width: 20%;
+    @include rtl-float-left();
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+  }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max){
+    .col-sm-cus-5{
+        width: 50%;
+        @include rtl-float-left();
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width / 2;
+    }
+
+}
+@media (max-width: $screen-xs) {
+  .col-xs-cus-12 {
+    width: 100%;
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+  }
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+.sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    @include rtl-text-align-left();
+    background: $white;
+}
+
+.btn-offcanvas {
+    &:hover{
+        color: $theme-color;
+    }
+}
+
+.offcanvas-head {
+    button {
+        padding: 14px;
+    }
+}
+
+.row-offcanvas {
+    position: relative;
+    @include transition(all 0.25s ease-out);
+}
+
+.offcanvas-showright {
+    background: rgba($theme-color,0.8);
+    position: relative;
+    @include transition(all 0.25s ease-out);
+    width: 400px;
+    position: absolute;
+    right: -800px;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    padding: 50px 0;
+    &.active {
+        display: block;
+        right: 0;
+    }
+    .showright{
+        background-color: $white;
+        @include size(40px,40px);
+        border: none;
+        @include rtl-margin-right(50px);
+        .fa{
+            color: $theme-color;
+        }
+    }
+}
+@media screen and (max-width: $screen-md-min) { //992px
+
+    .row-offcanvas-right {
+        @include rtl-right(0);
+    }
+    .row-offcanvas-left {
+        @include rtl-left(0);
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        @include rtl-right(-65%);
+    }
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        @include rtl-left(-65%);
+    }
+    .row-offcanvas-right.active {
+        @include rtl-right(65%);
+    }
+    .row-offcanvas-left.active {
+        @include rtl-left(65%);
+        position: relative;
+        &:before{
+            content: "";
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+        }
+    }
+    .zoomContainer{
+        display: none;
+    }
+}
+
+.navbar-offcanvas{
+    border: none;
+    ul#main-menu-offcanvas{
+        float: none;
+        display: block;
+        > li{
+            position: relative;
+            border-bottom: 1px solid $border-color;
+            display: block;
+            float: none;
+            .caret{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                @include size(25px, 25px);
+                border: 1px solid $border-color;
+                z-index: 9;
+                background: #f5f5f5;
+                &:hover{
+                    cursor: pointer;
+                }
+                &:after{
+                    font-family: FontAwesome;
+                    content: "\f107";
+                    top: 0px;
+                    left: 7px;
+                    position: absolute;
+                    z-index: 9;
+                }
+            }
+            ul{
+                li a{
+                    font-size: 13px;
+                    font-weight: 300;
+                    padding:10px 15px;
+                }
+            }
+        }
+        li.active > a{
+            background: none;
+            color: $theme-color;
+        }
+    }
+}
+@media(max-width: 1441px) {
+    .services-v2{overflow: hidden;}
+}
+@media(max-width: $screen-md-max) {
+    .opalmedical-recent-doctor{
+        .owl-carousel-play .owl-controls{
+            display: none!important;
+        }
+        .doctor-social{
+            height: 50px;
+            a {
+                margin: 15px 5px;
+            }
+        }
+        .item{min-height: 530px;}
+    }
+    #opal-masthead{
+        height: auto;
+        &.header-v1{
+            .header-main{position: static;}
+        }
+    }
+    .opalmedical-recent-service .nav-tabs > li > a{padding: 20px 8px;}
+     
+    .services-v2 .opalmedical-recent-service{
+        .service-right .entry-content{
+            padding: 20px;
+        }
+        h2.entry-title{margin: 0; padding: 0; border: none;}
+    }
+    .kc-cta-3 .kc-cta-button a {
+        padding: 15px!important;
+    }
+    body.kc-css-system .kc-css-326974 {
+        margin: 0!important;
+    }
+    .testimonial-collection .owl-carousel-play .carousel-control.right {
+        right: 0!important;
+    }
+    .map_popup_contact_form {
+        width: 50%!important;
+    }
+    #opalmembership-coupon-form {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: $screen-sm-max) {
+    .featured-box-top{
+        margin-top: 30px!important;
+        .kc-wrap-columns {
+            > .kc_column {height: auto!important;}}
+        & > .kc_column{padding: 15px !important;}
+    }
+    .kc-call-to-action.kc-cta-3 {
+        .kc-cta-button a {
+            font-size: 14px!important;
+        }
+        &.kc-is-button > div {
+            width: 100%;
+            display: block;
+        }
+        .kc-cta-button a {
+            float: none;
+            margin-top: 30px;
+        }
+    } 
+    #opal-masthead.header-v1 {
+        background: #fff;
+    }
+    .opalmedical-recent-doctor .item {
+        min-height: 440px;
+    }
+    
+    #opal-logo {
+        text-align: center;
+    }
+    .opalmedical-recent-service {
+        .first-child {
+            clear: none;
+        }
+    }
+    .widget_shopping_cart_content {
+        .total {
+            border-top: 1px solid $border-color;
+            @include rtl-text-align-right();
+            padding: 15px 0;
+            border-bottom: 1px solid $border-color;    
+        }
+        .buttons{            
+            @include rtl-text-align-right();
+            > a {
+                float: none!important; 
+                display: inline-block;  
+                margin-top: 10px;         
+            }
+        } 
+    }
+    .membership-packages {
+        .row {
+            >div:nth-child(3) {
+                clear: both;
+            }
+        }
+    }
+}
+@media(max-width: $screen-xs-max) {
+    .service-box-image-tab{text-align: center;}
+    .opalmedical-recent-service .nav-tabs {
+        margin-left: 0;
+            text-align: center;
+            > li {
+            float: none;
+            margin-bottom: -1px;
+            display: inline-block;}
+    }
+    h2.kc_title {
+        font-size: 30px;
+    }
+    h3.kc_title {
+        font-size: 24px;
+    }
+    .section-department{display: block;
+        .first-child{clear: none;}
+        .kc_column_inner{padding: 20px !important;}
+        .opal-doctor-department:before,
+        .opal-doctor-department:after{display: none!important;}
+
+    }
+    .opalmedical-recent-doctor .item {
+        min-height: 500px;
+    }
+    .testimonial-collection .owl-carousel-play .carousel-control {
+        display: none;
+    }
+    .preset-2 .opalmedical-recent-service article {
+        margin-bottom: 30px;
+    }
+    .call-to-action {
+        text-align: center;
+        .kc_text_block {
+            float: none;text-align: center;
+        }
+        .kc_button{float: none!important; margin-top: 20px;}
+    }
+    // .opal-footer .kc_column{width: 50%!important; margin-bottom: 30px;
+    //     &:nth-child(2n+1){clear: both;}
+    // }
+    .care-info .widget_text {
+        height: auto;
+        padding: 40px;
+    }
+    .archive-opalmedical-container{
+        .col-sm-6:nth-child(2n+1){clear: both;}
+    }
+    .map_popup_contact_form {
+        display: none!important;
+    }
+}
+@media (max-width: $screen-phone) { //480px
+    .active-mobile{
+        &.cart-popup{
+            .active-content{
+                right: 0;
+                left: -100px;
+            }
+        }
+    }
+    .zoomContainer{
+        display: none;
+    }
+    .testimonial-v2 {
+        .testimonials-body {
+            padding-left: 0;
+            &:before {
+                content: none;
+            }
+        }
+    }
+    .element-block-heading .heading {
+        font-size: 30px;
+    }
+    .testimonial-collection .owl-carousel-play .carousel-control{top: -50px;}
+    .opalmedical-recent-appointment .appointment-form .fleft{width: 100%!important;}
+
+    .section-blog article .blog-content{padding: 0 20px;}
+    .opalmedical-recent-appointment .appointment-form{width: 100%;}
+    .opal-breadscrumb h2.title-page {
+        font-size: 30px;
+    }
+    .testimonial-collection.testimonial-v1 .testimonials-body{padding: 0;}
+    .footer-v2 *{text-align: center!important;}
+    #opal-breadscrumb h2.title-page {font-size: 30px;}    
+}
+@media (max-width: 320px) {
+    .preset-2 .opalmedical-recent-service .entry-content .service-learnmore {
+        display: none;
+    }
+    .single-product.woocommerce div.product .product_title {
+        font-size: 25px;
+    }
+}
+@media (min-width: $screen-md) and (max-width: $screen-md-max){ //992px - 1199px
+    .preset-2 .opalmedical-recent-service .opalmedical_service .entry-content {
+        padding-top: 30px;
+        .service-learnmore {
+            display: none;
+        }
+    }
+    .opalmedical_doctor .doctor-social a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .header-v3 .navbar-mega .navbar-nav > li > a {
+        font-size: 12px;
+        font-weight: 400;
+    } 
+    .woocommerce .cart-collaterals .cross-sells, 
+    .woocommerce-page .cart-collaterals .cross-sells {
+        width: 100%!important;
+        float: none!important;
+    }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max){ //768px - 991px
+    #main,.opal-footer {
+        .container {
+            width: 100% !important;
+        }
+    }
+    .zoomContainer{
+        display: none;
+    }
+    .opal-social-share{
+        @include rtl-margin-left(20px);
+        display: block;
+    }
+}

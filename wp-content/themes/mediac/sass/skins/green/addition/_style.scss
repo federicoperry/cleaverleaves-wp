@@ -1,0 +1,87 @@
+.#{$app-prefix}-copyright{
+    background: transparent;
+}
+.product-info div.row {
+    background: transparent;	
+}
+
+#opal-masthead {
+	&.header-v1 {
+		.opal-mainmenu {
+			background: #fff;
+		}
+		.navbar-mega .navbar-nav > li {
+			&.active {
+				> a {
+					color: $theme-color;
+				}
+			}
+			> a {
+				color: $theme-color-secondary;
+				padding: 42px 0;
+				&:hover {
+					color: $theme-color;
+				}
+				.caret {
+					color: $theme-color-secondary;
+				}
+			}
+		}
+	}
+	&.header-v3{
+        .header-main{
+            z-index: 9999;
+            .container{
+                @media (min-width: $screen-sm-max) {
+                    position: absolute;
+                    left: 0;
+                    right: 0;  
+                    .row{
+                        margin: 0;     
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    }         
+                }
+                @media (min-width: $screen-lg) {
+                    .row{
+                        padding: 0 40px;    
+                    } 
+                }   
+            }
+            .logo-wrapper, .opal-header-right {
+                padding: 0;
+            }
+        }
+        .navbar-mega .navbar-nav > li {
+            padding: 0 5px;
+            &.active {
+                > a {
+                    color: #fff;
+                }
+            }
+            > a {
+                color: #fff;
+                font-size: 13px;
+                &:hover {
+                    color: $theme-color;
+                }
+                .caret {
+                    color: #fff;
+                }
+            }
+        }
+        .search-cart {
+        	margin-top: 17px;
+        	a {
+	            color: #fff;
+	        }
+        }
+        .opal-header-right{    margin-top: 17px;}
+        .btn-appointment{margin-top: 5px;}
+        .mini-account{
+            .dropdown-menu{
+                padding: 30px;
+            }
+        }
+        .cart-icon b{display: none;}
+    }
+}

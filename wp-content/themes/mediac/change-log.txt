@@ -1,0 +1,37 @@
+Version: 1.2.2 
+Updated 27-Feb-2018
+- Update woocommerce 3.3.3
+	/themes/mediac/css/style.css
+	/themes/mediac/css/woocommerce.css
+	/themes/mediac/sass/woocommerce/_styles.scss
+	/themes/mediac/woocommerce/cart/cart.php
+	/themes/mediac/woocommerce/cart/cart-empty.php
+	/themes/mediac/woocommerce/cart/cross-sells.php
+	/themes/mediac/woocommerce/cart/mini-cart.php
+	/themes/mediac/woocommerce/checkout/form-checkout.php
+	/themes/mediac/woocommerce/content-product.php
+	/themes/mediac/woocommerce/content-product_cat.php
+	/themes/mediac/woocommerce/content-products.php
+	/themes/mediac/woocommerce/content-single-product.php
+	/themes/mediac/woocommerce/global/breadcrumb.php
+	/themes/mediac/woocommerce/loop/add-to-cart.php
+	/themes/mediac/woocommerce/loop/loop-end.php
+	/themes/mediac/woocommerce/loop/loop-start.php
+	/themes/mediac/woocommerce/loop/rating.php
+	/themes/mediac/woocommerce/single-product/related.php
+	/themes/mediac/woocommerce/single-product/review.php
+	/themes/mediac/woocommerce/single-product/tabs/tabs.php
+	/themes/mediac/woocommerce/single-product/up-sells.php
+	/themes/mediac/woocommerce/single-product-reviews.php
+---------------------------------------------------------
+Version: 1.2.1 
+Updated 25-Jan-2018
+- Fix bug css myaccount on topbar
+
+====================
+Version: 1.2.0 
+Updated 23-October-2017
+- update woo 3.2
+- remove file js
+- update file languages
+- update menu mobile

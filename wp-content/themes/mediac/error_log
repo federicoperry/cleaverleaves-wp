@@ -1,0 +1,2 @@
+[24-May-2018 10:12:17 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/pixozzy/public_html/cleverleaves/wp-content/themes/mediac/index.php on line 14
+[01-Jun-2018 19:31:16 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/cleverleaves/public_html/wp-content/themes/mediac/index.php on line 14

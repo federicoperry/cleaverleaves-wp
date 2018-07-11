@@ -1,0 +1,41 @@
+/*
+ * Global variables
+ */
+$image-theme-path                : '../images/' !default;
+$image-theme-skin                : '../images/' !default;
+$image-fonts-path                : '../fonts/' !default;
+// standard colors
+$white		    : #FFF !default;
+$black			: #000 !default;
+$nocolor		: transparent !default;
+$light-gray	: #CCC !default;
+$turquoise:   #473941 !default;
+
+
+// color for default theme
+$theme-color    : #01c3cf !default; /* main color which will be used for all main block styles... */
+$border-color	: #e9e9e9 !default;
+$border-color-base:#e9e9e9 !default;
+
+$theme-color-second  			 : #01c3cf !default;
+$theme-color-default             : $theme-color !default;
+$theme-color-hover               : $theme-color !default;
+$theme-color-secondary           : #2d357e !default;
+$link-color                      : #01c3cf !default;
+
+
+// Theme Margin, Padding
+// -------------------------
+$theme-margin    : 20px !default;
+$theme-padding   : 20px !default;
+// fonts
+
+$theme-padding : 30px !default;
+/**
+ * Import component variables
+ */
+@import "vars/form";
+@import "vars/nav";
+@import "vars/layout";
+@import "vars/elements";
+@import "vars/widget";

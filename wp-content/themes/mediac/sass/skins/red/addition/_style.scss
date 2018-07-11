@@ -1,0 +1,59 @@
+#opal-masthead {
+	&.header-v1 {
+		.opal-mainmenu {
+			background: #fff;
+		}
+		.navbar-mega .navbar-nav > li {
+			&.active {
+				> a {
+					color: $theme-color;
+				}
+			}
+			> a {
+				color: $theme-color-secondary;
+				padding: 42px 0;
+				&:hover {
+					color: $theme-color;
+				}
+				.caret {
+					color: $theme-color-secondary;
+				}
+			}
+		}
+	}
+	&.header-v3 {
+		.header-main {
+			> .container {
+				position: initial;
+			}	
+		}
+		.navbar-mega .navbar-nav > li {
+			padding: 0 5px;
+			&.active {
+				> a {
+					color: $theme-color;
+				}
+			}
+			> a {
+				color: $theme-color-secondary;
+				font-size: 13px;
+				&:hover {
+					color: $theme-color;
+				}
+				.caret {
+					color: $theme-color-secondary;
+				}
+			}
+		}
+		.search-cart {
+            margin-top: 17px;
+        }
+		.search-cart a {
+			color: $theme-color-secondary;
+			margin-right: 12px;
+		}
+		.btn-appointment {
+			font-size: 14px;
+		}
+	}
+}

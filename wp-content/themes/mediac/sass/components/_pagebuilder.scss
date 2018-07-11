@@ -1,0 +1,140 @@
+.kc_image_gallery{
+	.item-grid{
+		img{
+			padding: 5px;
+			@include transition(opacity .4s);
+		}
+		&:hover {
+			img {
+				@include opacity(0.6);
+			}
+		}
+	}
+}
+.kc_tabs{
+	&.hightlight{
+		.ui-tabs{
+			border: none;
+		}
+		.kc_tab.ui-tabs-body-active{
+			padding: 0;
+			margin-top: $grid-gutter-width;
+		}
+		.kc_wrapper{
+			.kc_tabs_nav{
+				background: transparent;
+				text-align: center;
+				height: auto;
+				font-size: 20px;
+				position: relative;
+
+				li{
+					float: none;
+					font-weight: bold;
+					color: $link-color;
+					text-transform: uppercase;
+					@media (min-width: $screen-sm) and (max-width: $screen-sm-max){
+						padding: 0 10px;
+					}
+					a:hover,&:hover{
+						background: transparent;
+					}
+				}
+				.ui-tabs-active{
+					background: transparent;
+					color: $link-hover-color;
+					a{
+						color: $link-hover-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.kc-pie-chart-wrapper {
+	.pie_chart_text{
+		h3{
+			color: $theme-color;
+			font-size: 14px;
+		}
+	}
+}
+.kc_accordion_section{
+	> .kc_accordion_header{ 
+		> a{	
+			font-family: $headings-font-family;
+			font-weight: 700;
+		    font-size: 18px;
+		}
+		> span.ui-accordion-header-icon {
+			color: $theme-color;
+		}
+	}
+	> .kc_accordion_content{
+	    font-size: 16px;
+    	line-height: 30px;
+	}
+} 
+
+.kc_button{
+	font-weight: 700;
+    font-family: $headings-font-family;
+    text-transform: capitalize;
+    @include rounded-corners(3px);
+}
+.kc-button-effect.kc-image-hover-effects {
+	overflow: visible;
+	.overlay-effects {
+		@include opacity(1);
+		background: transparent;
+		.content-button a {
+			@include opacity(1);
+		}
+	}
+	&:hover {
+		.overlay-effects {
+			background: rgba(0, 0, 0, 0.4);
+		}
+	}
+	.content-button a {
+	    position: absolute;
+	    @include rtl-left (-90px);
+	    top: 45%;
+	    letter-spacing: 2px;
+	    transform: rotate(-90deg);
+	}
+}
+.kc_title{
+    position: relative;
+    margin: 0 0 20px;
+    font-style: normal;
+	color: $theme-color-secondary;
+	@media(max-width: $screen-sm-max){
+		font-size: 30px;
+		    letter-spacing: 0;
+	}
+}
+.kc-title-wrap {
+	color: #999999;
+}
+
+@media(max-width: $screen-xs-max){
+	.kc_column_inner,
+	.kc_column{width: 100%!important;}
+}
+
+.kc-video-inner iframe{max-width: 100%;}
+.container-fluid {
+	padding: 0;
+}
+.kc_google_maps .map_popup_contact_form {
+	height: auto!important;
+	padding: 0px!important;
+	overflow-y: initial!important;
+	margin-top: 150px;
+    left: 0;	
+}
+.kc-google-maps iframe{
+    pointer-events: none;
+}

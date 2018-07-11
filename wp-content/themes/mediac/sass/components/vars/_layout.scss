@@ -1,0 +1,98 @@
+
+// Topbar
+// -------------------------
+$topbar-bg                                      : transparent !default;
+$topbar-link-color                              : #fff !default;
+$topbar-link-hover-color                        : $theme-color !default;
+$topbar-color                                   : #afbbd5 !default;
+$topbar-border                                  : 0 !default;
+$topbar-font-size                               : 12px !default;
+$topbar-icon-color                              : $theme-color !default;
+$topbar-icon-font-size                          : 14px !default;
+$topbar-text-transform                          : capitalize !default;
+$topbar-padding                            		: 15px 0 !default;
+
+//// Header
+
+$header-main-padding : 15px 0 !default;
+
+
+
+$masthead-head-padding		 : 0px !default;
+$masthead-head-bg		 : $white !default;
+
+$massbottom-head-bg		 : $theme-color !default;
+$massbottom-head-padding : 6px 9px !default;
+$massbottom-head-color   : $theme-color !default;
+$massbottom-head-border-color: darken($massbottom-head-bg,4%)!default;
+
+/**
+ *
+ */
+
+ $mainmenu-bg: transparent !default;
+
+
+
+
+// Footer
+// -------------------------
+$footer-bg                                      : #ffffff !default;
+$footer-inner-bg								:transparent!default;
+$footer-color                                   : #666 !default;
+$footer-transform                               : none !default;
+$footer-font-size                               : 14px !default;
+$footer-border                                  : none !default;
+$footer-padding-top                             : 80px !default;
+$footer-padding-bottom                          : 60px !default;
+$footer-text-hightlight                         : $white !default;
+$footer-link-font-size							: 14px !default;
+$footer-column-margin                           : 0 0 25px 0 !default;
+$footer-link-color                              : #999999 !default;
+$footer-link-hover-color                        : $theme-color !default;
+$footer-icon-color                              : darken($white, 20%) !default;
+$footer-icon-font-size                          : 13px !default;
+
+$footer-heading-font-size                       : 24px !default;
+$footer-heading-color                           : #2d357e !default;
+$footer-heading-margin                          : 20px 0 !default;
+$footer-heading-padding                         : 0px !default;
+$footer-heading-display                         : block !default;
+$footer-heading-transform                       : capitalize !default;
+$footer-heading-fweight                         : 600 !default;
+$footer-heading-ffamily                         : $headings-font-family !default;
+
+
+$footer-list-transform                          : none !default;
+$footer-list-font-size                          : 14px !default;
+$footer-list-margin                             : 0 0 10px !default;
+$footer-list-light-height                       : 2 !default;
+
+
+$footer-newsletter-padding                      : 25px !default;
+$footer-newsletter-bg                           : $theme-color !default;
+$footer-newsletter-color                        : #484848 !default;
+$footer-newsletter-heading-font-size            : 18px !default;
+
+$footer-top-bg 									: $white !default;
+$footer-top-color  								: #999999 !default;
+$footer-top-padding-top							: 12px !default;
+$footer-top-padding-bottom						: 12px !default;
+$footer-top-font-size							: 12px !default;
+$footer-top-letter-spacing						: 2px !default;
+$footer-top-border-color 						: rgba(0, 0, 0, 0.1);
+// Copyright
+// -------------------------
+
+ // Copyright
+// -------------------------
+$copyright-bg                                   : #2d357e !default;
+$copyright-color                                : #a5a5a5 !default;
+$copyright-link-color                           : #01c3cf !default;
+$copyright-padding-top                          : 30px !default;
+$copyright-padding-bottom                       : 30px !default;
+$copyright-font-size							         : 14px !default;
+$copyright-font-weight							      : 400 !default;
+
+$del-font-size									         : 12px !default;
+$del-color										         : #999999;
