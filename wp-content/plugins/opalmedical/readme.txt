@@ -1,0 +1,1 @@
+Then install plugin you must Copy vc_templates to root your theme!!
